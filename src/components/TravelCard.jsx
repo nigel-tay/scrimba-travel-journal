@@ -12,14 +12,14 @@ export default function TravelCard({travelInfo, id}) {
                 <div className="text-container">
                     <div className="location-section">
                         <FaMapMarkerAlt className="marker-icon" />
-                        <h3>{country}</h3> {/* COUNTRY */}
+                        <h3>{country}</h3>
                         <p className="google-link">
-                            <a href={gmaplink} target="_blank">View on Google Maps</a> {/* GOOGLE MAPS LINK */}
+                            <a href={gmaplink} target="_blank">View on Google Maps</a>
                         </p> 
                     </div>
-                    <h1 className="location-text">{landmark}</h1> {/* LANDMARK */}
-                    <p className="date-range">{date}</p> {/* DATE RANGE */}
-                    <p className="description-text">{description}</p> {/* DESCRIPTION */}
+                    <h1 className="location-text">{landmark}</h1>
+                    <p className="date-range">{date}</p>
+                    <p className="description-text">{description}</p>
                 </div>
             </div>
             { id === 2 ? "" : <hr className="horizontal-rule"/> }

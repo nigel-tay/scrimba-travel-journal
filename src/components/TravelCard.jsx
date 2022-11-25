@@ -1,8 +1,5 @@
 import React from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import batur from "../assets/images/batur.jpg";
-import hanoi from "../assets/images/hanoi.jpg";
-import keelung from "../assets/images/keelung.jpg";
 
 export default function TravelCard({travelInfo, id}) {
 
@@ -11,7 +8,7 @@ export default function TravelCard({travelInfo, id}) {
     return (
         <div className="travelcard-container">
             <div className="row-container">
-                <img className="card-image" src={image} />
+                <img src={image} className="card-image" />
                 <div className="text-container">
                     <div className="location-section">
                         <FaMapMarkerAlt className="marker-icon" />

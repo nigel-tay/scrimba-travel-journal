@@ -1,13 +1,16 @@
 import './App.css'
 import Navbar from "./components/Navbar";
 import TravelCard from "./components/TravelCard";
+import travelInfo from "./data/travelInfo.js";
 
 function App() {
 
   return (
     <div className="App">
       <Navbar />
-      <TravelCard />
+      {travelInfo.map((cardInfo) => {
+        return <TravelCard travelInfo={cardInfo} />
+      })}
     </div>
   )
 }

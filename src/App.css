@@ -13,7 +13,7 @@ body {
     align-items: center;
     height: 55px;
     background-color: #F55A5A;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 }
 
 .globe-icon {
@@ -29,7 +29,7 @@ body {
 
 /* Card */
 .travelcard-container {
-    padding: 15px 40px 15px;
+    padding: 0px 40px 15px;
 }
 
 .row-container {

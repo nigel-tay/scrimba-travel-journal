@@ -4,7 +4,7 @@ import batur from "../assets/images/batur.jpg";
 import hanoi from "../assets/images/hanoi.jpg";
 import keelung from "../assets/images/keelung.jpg";
 
-export default function TravelCard({travelInfo}) {
+export default function TravelCard({travelInfo, id}) {
 
     let {image, country, gmaplink, landmark, date, description} = travelInfo;
 
@@ -25,7 +25,7 @@ export default function TravelCard({travelInfo}) {
                     <p className="description-text">{description}</p> {/* DESCRIPTION */}
                 </div>
             </div>
-            <hr className="horizontal-rule"/> {/* has to be conditional to see if it is the last card or not */}
+            { id === 2 ? "" : <hr className="horizontal-rule"/> }
         </div>
     )
 }

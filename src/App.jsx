@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {travelInfo.map((cardInfo) => {
-        return <TravelCard travelInfo={cardInfo} />
+      {travelInfo.map((cardInfo, id) => {
+        return <TravelCard key={id} travelInfo={cardInfo} id={id} />
       })}
     </div>
   )

@@ -1,4 +1,3 @@
-import './App.css'
 import Navbar from "./components/Navbar";
 import TravelCard from "./components/TravelCard";
 import travelInfo from "./data/travelInfo.js";
